@@ -1,0 +1,22 @@
+# Arquivos de ambiente (não versionar)
+.env
+*.env
+.env.*
+!*.env.example
+
+# Node / Frontend
+node_modules/
+dist/
+build/
+
+# Java / Spring Boot
+target/
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# Logs e uploads
+*.log
+backend/uploads/

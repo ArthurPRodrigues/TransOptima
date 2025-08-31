@@ -1,30 +1,14 @@
 # TransOptima
 
-Sistema de **gestão de documentos de transportadoras**.  
-- **V1**: CRUD básico de Transportadoras e Documentos, com status de validade (VÁLIDO / A VENCER / EXPIRADO).  
-- **V2 (roadmap)**: envio de **e-mails automáticos** quando o documento estiver para vencer.
+System for **carrier document management**.  
+- **V1**: Basic CRUD for Carriers and Documents, with validity status (VALID / EXPIRING / EXPIRED).  
+- **V2 (roadmap)**: automatic **e-mail notifications** when a document is about to expire.
 
 ## Stack
 
-- **Frontend**: Vite/React (porta `5173`)
-- **Backend**: Node/Express (ou compatível) (porta `4000`)
-- **Banco**: PostgreSQL (porta `5432`)
-- **Orquestração**: Docker + Docker Compose
+- **Frontend**: Vite/React (port `5173`)
+- **Backend**: Node/Express (or compatible) (port `4000`)
+- **Database**: PostgreSQL (port `5432`)
+- **Orchestration**: Docker + Docker Compose
 
-> Obs.: O backend lê as variáveis `PGHOST`, `PGPORT`, `PGUSER`, `PGPASSWORD`, `PGDATABASE`, `JWT_SECRET`, `PORT` e `DAYS_A_VENCER`.
 
----
-
-## Pré-requisitos
-
-- [Docker](https://www.docker.com/)  
-- [Docker Compose](https://docs.docker.com/compose/)
-
----
-
-## Como rodar (DEV)
-
-1. **Clone o repositório**
-   ```bash
-   git clone <URL_DO_REPO>
-   cd transoptima
